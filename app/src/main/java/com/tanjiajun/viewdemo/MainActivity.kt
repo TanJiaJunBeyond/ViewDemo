@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         // 创建子线程，并且启动它
         Thread {
-            // 让线程睡眠一秒
+            // 让子线程睡眠一秒
 //            Thread.sleep(1000)
             // 在子线程更新UI，设置id为tv_content的TextView的文本为谭嘉俊
             findViewById<TextView>(R.id.tv_content).text = "谭嘉俊"
